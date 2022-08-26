@@ -15,6 +15,10 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->string('nome', 100);
+            $table->decimal('preco');
+            $table->string('categoria', 50);
+            $table->string('descricao');
             $table->timestamps();
         });
     }
