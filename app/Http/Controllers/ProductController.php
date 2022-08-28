@@ -84,7 +84,7 @@ class ProductController extends Controller
                 $this->product->deleteProduct($id);
                 return response()->json(['message' => 'Produto eliminado com sucesso'], 200);
             else:
-                return response()->json(['status' => 'produto não encontrado'], 404);
+                return response()->json(['message' => 'produto não encontrado'], 404);
             endif;
 
         } catch (\Throwable $e) {
