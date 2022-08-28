@@ -52,11 +52,11 @@ class ProductController extends Controller
             if($product):
                 return response()->json($product, 200);
             else:
-                return response()->json(['status' => 'produto não encontrado'], 404);
+                return response()->json(['message' => 'produto não encontrado'], 404);
             endif;
         }
         catch(\Throwable $e){
-            return response()->json(['status' => 'Aconteceu um erro ao buscar produto'], 500);
+            return response()->json(['message' => 'Aconteceu um erro ao buscar produto'], 500);
         }
     }
 
