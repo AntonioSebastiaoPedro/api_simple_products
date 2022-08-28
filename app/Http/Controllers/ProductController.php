@@ -32,7 +32,15 @@ class ProductController extends Controller
     
     public function store(Request $request)
     {
-        //
+        try{
+            $product = $this->product->insert($request->all());
+            if($product):
+                return response()->json(['message' => 'Produto cadastrado com sucesso'], 200);
+            endif;
+
+        }catch(\Throwable $e){
+            return response()->json(['message' => 'Aconteceu um erro ao cadastrar produto'], 500);
+        }
     }
 
     

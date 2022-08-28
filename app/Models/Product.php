@@ -31,4 +31,10 @@ class Product extends Model
     {
         return $this->find($id_product);
     }
+
+    public function insert($data){
+        if(is_array($data)){
+            return $this->create($data);
+        }
+    }
 }
