@@ -64,7 +64,15 @@ class ProductController extends Controller
     
     public function update(Request $request, $id)
     {
-        //
+        try {
+            $product = $this->product->updateProduct($request->all(), $id);
+            if($product):
+                return response()->json(['message' => 'Produto editado com sucesso'], 200);
+            endif;
+
+        } catch (\Throwable $e) {
+            return response()->json(['message' => 'Aconteceu um erro ao editar produto'], 500);
+        }
     }
 
     

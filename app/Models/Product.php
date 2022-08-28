@@ -37,4 +37,10 @@ class Product extends Model
             return $this->create($data);
         }
     }
+
+    public function updateProduct($data, $id_product){
+        if(is_array($data)){
+            return $this->where('id', $id_product)->update($data);
+        }
+    }
 }
