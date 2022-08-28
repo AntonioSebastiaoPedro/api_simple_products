@@ -25,4 +25,10 @@ class Product extends Model
 
         return false;
     }
+
+
+    public function getOne($id_product)
+    {
+        return $this->find($id_product);
+    }
 }
