@@ -43,4 +43,8 @@ class Product extends Model
             return $this->where('id', $id_product)->update($data);
         }
     }
+
+    public function deleteProduct($id_product){
+        return $this->where('id', $id_product)->delete();
+    }
 }

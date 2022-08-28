@@ -78,6 +78,17 @@ class ProductController extends Controller
     
     public function destroy($id)
     {
-        //
+        try {
+            $product = $this->product->getOne($id);
+            if($product):
+                $this->product->deleteProduct($id);
+                return response()->json(['message' => 'Produto eliminado com sucesso'], 200);
+            else:
+                return response()->json(['status' => 'produto não encontrado'], 404);
+            endif;
+
+        } catch (\Throwable $e) {
+            return response()->json(['message' => 'Aconteceu um erro ao eliminar o produto'], 500);
+        }
     }
 }
