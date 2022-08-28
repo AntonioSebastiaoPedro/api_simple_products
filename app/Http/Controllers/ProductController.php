@@ -21,11 +21,11 @@ class ProductController extends Controller
             if($products->all()):
                 return response()->json($products, 200);
             else:
-                return response()->json(['status' => 'Sem produtos cadastrados'], 200);
+                return response()->json(['message' => 'Sem produtos cadastrados'], 200);
             endif;
 
         } catch (\Throwable $e) {
-            return response()->json(['status' => 'Erro ao buscar produtos'], 500);
+            return response()->json(['message' => 'Erro ao buscar produtos'], 500);
         }   
     }
 
