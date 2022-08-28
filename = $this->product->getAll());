@@ -1,0 +1,65 @@
+[33mcommit 10d3488d9f8768f0f35abec3f2435d5ad2f73968[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/listar-produtos[m[33m)[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 09:43:38 2022 +0100
+
+    Adicionado seeder da tabela products
+
+[33mcommit 83c29d7e94c438075dfa929bf17a887fb9cd0437[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 09:21:44 2022 +0100
+
+    Injectado a dependência do model Product
+
+[33mcommit 13fff6e967254fd0bfc7ad4ff6faa5d8e2369dff[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 09:18:48 2022 +0100
+
+    Eliminado as funções craete, edit e os comentários. São desnecessários
+
+[33mcommit cc0cc815ffd651c8aa4fd8cbba42e527eac09c21[m[33m ([m[1;32mdevelop[m[33m)[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 09:15:03 2022 +0100
+
+    Adicionado controller ProductController
+
+[33mcommit 28931677155b625105c77be7701908314cf2b167[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 09:04:24 2022 +0100
+
+    Corrigido o problema de  configuração. Configuração feita no arquivo env
+
+[33mcommit 5661393c8b20f271578ad5502757db685c6d94e5[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 08:57:08 2022 +0100
+
+    Criado os campos da tabela products na sua migration
+
+[33mcommit a2b3dc54afd5e3130b7f9aa2d3ceec95e6f34d23[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 08:40:53 2022 +0100
+
+    Adiconada migration da tabela products
+
+[33mcommit ede28b41f8fa93124f2114d15aef871ad339d97e[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 08:40:16 2022 +0100
+
+    Adicionado model Product
+
+[33mcommit 824185c5e22b8d74aee4753a01c797e66925265b[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 08:35:25 2022 +0100
+
+    Definido tamanho padrão de uma string no banco
+
+[33mcommit 6acd78f085ade5a70e464b743aa89078d8dee923[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 08:21:10 2022 +0100
+
+    Configuração do servidor
+
+[33mcommit 7eac6db4a80a4865bceae83ce70ae0619025ec80[m[33m ([m[1;32mmaster[m[33m)[m
+Author: António Sebastião Pedro <antoniosebastiaopedro19@gmail.com>
+Date:   Fri Aug 26 08:04:12 2022 +0100
+
+    Iniciando o projecto

@@ -14,9 +14,19 @@ class ProductController extends Controller
         $this->product = $product;
     }
 
-    public function index()
-    {
-        //
+    public function index(){
+        try {
+            $products = $this->product->getAll(5);
+
+            if($products->all()):
+                return response()->json($products, 200);
+            else:
+                return response()->json(['status' => 'Sem produtos cadastrados'], 200);
+            endif;
+
+        } catch (\Throwable $e) {
+            return response()->json(['status' => 'Erro ao buscar produtos'], 500);
+        }   
     }
 
     
